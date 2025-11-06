@@ -456,3 +456,816 @@ footer {
         padding: 0 10px;
     }
 }
+
+/* Texto dentro de las actividades */
+.activity-dev {
+    font-weight: 600;
+    color: var(--color-primario);
+    margin-bottom: 0.3rem;
+    text-transform: none;
+}
+
+.activity-grade {
+    margin-bottom: 0.7rem;
+    color: #222;
+}
+
+.activity-grade strong {
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* ==== AREAS – FORMATO UNIFICADO SEGÚN NOTA ==== */
+
+.activities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.activity-section {
+    width: 95%;
+    min-height: 420px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    transition: transform 0.3s ease;
+    background: #fff;
+}
+
+.activity-section:hover {
+    transform: translateY(-5px);
+}
+
+.activity-section h2 {
+    margin-top: 0;
+    color: var(--color-primario);
+    font-family: var(--fuente-titulos);
+    font-size: 1.4rem;
+}
+
+/* Subtítulo "Del desarrollo ..." */
+.activity-dev {
+    font-weight: 600;
+    color: var(--color-primario);
+    font-family: var(--fuente-principal);
+    margin-bottom: .2rem;
+}
+
+/* Grado en negrita, como dice la NOTA */
+.activity-grade {
+    font-family: var(--fuente-principal);
+    margin-bottom: .5rem;
+}
+.activity-grade strong {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Títulos pequeños tipo "Motivación" */
+.activity-section h3 {
+    color: var(--color-secundario);
+    font-family: var(--fuente-titulos);
+    margin-top: .7rem;
+    margin-bottom: .2rem;
+}
+
+/* Listas dentro de la actividad */
+.activity-section ul {
+    padding-left: 1.4rem;
+    line-height: 1.5;
+}
+
+/* Colores alternos como ya tenías */
+.primero {
+    background-color: #e6f7ff;
+}
+.segundo {
+    background-color: #fff2e6;
+}
+
+/* Imagen que reemplaza al video */
+.video-link {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    margin-top: .7rem;
+    cursor: pointer;
+}
+.video-thumb {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.12);
+    transition: transform .25s ease;
+}
+.video-thumb:hover {
+    transform: scale(1.02);
+}
+
+/* Título grande del área */
+.area-title {
+    text-align: center;
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .activity-section {
+        min-height: unset;
+    }
+    .video-link {
+        width: 180px;
+    }
+}
+
+
+/* ====== BLOQUE FINAL – MÚSICA DIVERTIDA (AFECTIVO) ====== */
+.activity-section.afectivo {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.8rem 2rem;
+  max-width: 850px;
+  margin: 1.5rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Título verde */
+.activity-section.afectivo .act-titulo {
+  font-size: 2.3rem;
+  color: #23851f;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Subtítulo amarillo */
+.activity-section.afectivo .act-subtitulo {
+  font-size: 2rem;
+  color: #f4a900;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Grado y textos */
+.activity-section.afectivo .act-grado {
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.activity-section.afectivo .act-texto {
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Motivación azul */
+.activity-section.afectivo .act-label-azul {
+  color: #0066aa;
+  font-weight: 700;
+}
+
+/* Imagen del video centrada */
+.activity-section.afectivo .video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.activity-section.afectivo .video-thumb {
+  width: 70%;                   /* mucho más grande */
+  max-width: 500px;             /* tamaño máximo */
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-section.afectivo .video-thumb:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Adaptable */
+@media (max-width: 768px) {
+  .activity-section.afectivo {
+    padding: 1.2rem;
+  }
+  .activity-section.afectivo .act-titulo {
+    font-size: 1.9rem;
+  }
+  .activity-section.afectivo .act-subtitulo {
+    font-size: 1.6rem;
+  }
+  .activity-section.afectivo .video-thumb {
+    width: 85%;
+    max-width: 400px;
+  }
+}
+
+
+
+
+/* ... aquí está el CSS que ya hicimos para afectivo ... */
+
+/* reutilizar mismo estilo para emocional */
+.activity-section.emocional {
+  composes: afectivo;
+}
+
+/* si tu entorno no soporta 'composes', usa esto: */
+.activity-section.emocional {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.8rem 2rem;
+  max-width: 850px;
+  margin: 1.5rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+.activity-section.emocional .act-titulo {
+  font-size: 2.3rem;
+  color: #23851f;   /* mismo verde del doc */
+  font-weight: 700;
+  margin: 0;
+}
+.activity-section.emocional .act-subtitulo {
+  font-size: 2rem;
+  color: #f4a900;   /* mismo amarillo del doc */
+  font-weight: 700;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.activity-section.emocional .act-grado,
+.activity-section.emocional .act-texto {
+  color: #000;
+  margin-bottom: 1rem;
+}
+.activity-section.emocional .act-label-azul {
+  color: #0066aa;
+  font-weight: 700;
+}
+.activity-section.emocional .video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.activity-section.emocional .video-thumb {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.activity-section.emocional .video-thumb:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,.3);
+}
+@media (max-width: 768px) {
+  .activity-section.emocional {
+    padding: 1.2rem;
+  }
+  .activity-section.emocional .act-titulo {
+    font-size: 1.9rem;
+  }
+  .activity-section.emocional .act-subtitulo {
+    font-size: 1.6rem;
+  }
+  .activity-section.emocional .video-thumb {
+    width: 85%;
+    max-width: 400px;
+  }
+}
+
+/* ====== usar mismo formato para espiritual ====== */
+.activity-section.espiritual {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  padding: 1.8rem 2rem;
+  max-width: 850px;
+  margin: 1.5rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* mismos colores del diseño que estás usando */
+.activity-section.espiritual .act-titulo {
+  font-size: 2.3rem;
+  color: #23851f;   /* verde */
+  font-weight: 700;
+  margin: 0;
+}
+
+.activity-section.espiritual .act-subtitulo {
+  font-size: 2rem;
+  color: #f4a900;   /* amarillo/anaranjado */
+  font-weight: 700;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.activity-section.espiritual .act-grado,
+.activity-section.espiritual .act-texto {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.activity-section.espiritual .act-label-azul {
+  color: #0066aa;
+  font-weight: 700;
+}
+
+/* imagen centrada y grande */
+.activity-section.espiritual .video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.activity-section.espiritual .video-thumb {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.activity-section.espiritual .video-thumb:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,.3);
+}
+
+@media (max-width: 768px) {
+  .activity-section.espiritual {
+    padding: 1.2rem;
+  }
+  .activity-section.espiritual .act-titulo {
+    font-size: 1.9rem;
+  }
+  .activity-section.espiritual .act-subtitulo {
+    font-size: 1.6rem;
+  }
+  .activity-section.espiritual .video-thumb {
+    width: 85%;
+    max-width: 400px;
+  }
+}
+/* mismo formato para social, psicologico, etico y moral */
+.activity-section.social,
+.activity-section.psicologico,
+.activity-section.etico,
+.activity-section.moral {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  padding: 1.8rem 2rem;
+  max-width: 850px;
+  margin: 1.5rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.activity-section.social .act-titulo,
+.activity-section.psicologico .act-titulo,
+.activity-section.etico .act-titulo,
+.activity-section.moral .act-titulo {
+  font-size: 2.3rem;
+  color: #23851f;
+  font-weight: 700;
+  margin: 0;
+}
+
+.activity-section.social .act-subtitulo,
+.activity-section.psicologico .act-subtitulo,
+.activity-section.etico .act-subtitulo,
+.activity-section.moral .act-subtitulo {
+  font-size: 2rem;
+  color: #f4a900;
+  font-weight: 700;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.activity-section.social .act-grado,
+.activity-section.psicologico .act-grado,
+.activity-section.etico .act-grado,
+.activity-section.moral .act-grado,
+.activity-section.social .act-texto,
+.activity-section.psicologico .act-texto,
+.activity-section.etico .act-texto,
+.activity-section.moral .act-texto {
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.activity-section.social .act-label-azul,
+.activity-section.psicologico .act-label-azul,
+.activity-section.etico .act-label-azul,
+.activity-section.moral .act-label-azul {
+  color: #0066aa;
+  font-weight: 700;
+}
+
+/* imagen centrada */
+.activity-section.social .video-link,
+.activity-section.psicologico .video-link,
+.activity-section.etico .video-link,
+.activity-section.moral .video-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.activity-section.social .video-thumb,
+.activity-section.psicologico .video-thumb,
+.activity-section.etico .video-thumb,
+.activity-section.moral .video-thumb {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.activity-section.social .video-thumb:hover,
+.activity-section.psicologico .video-thumb:hover,
+.activity-section.etico .video-thumb:hover,
+.activity-section.moral .video-thumb:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,.3);
+}
+
+@media (max-width: 768px) {
+  .activity-section.social,
+  .activity-section.psicologico,
+  .activity-section.etico,
+  .activity-section.moral {
+    padding: 1.2rem;
+  }
+  .activity-section.social .act-titulo,
+  .activity-section.psicologico .act-titulo,
+  .activity-section.etico .act-titulo,
+  .activity-section.moral .act-titulo {
+    font-size: 1.9rem;
+  }
+  .activity-section.social .act-subtitulo,
+  .activity-section.psicologico .act-subtitulo,
+  .activity-section.etico .act-subtitulo,
+  .activity-section.moral .act-subtitulo {
+    font-size: 1.6rem;
+  }
+  .activity-section.social .video-thumb,
+  .activity-section.psicologico .video-thumb,
+  .activity-section.etico .video-thumb,
+  .activity-section.moral .video-thumb {
+    width: 85%;
+    max-width: 400px;
+  }
+}
+
+
+
+
+
+/* ====== ÁREAS CON COLORES POR INDICACIÓN ====== */
+
+/* título con comillas ya viene en el HTML; aquí solo aseguramos color */
+#areas h2 {
+  color: var(--color-primario);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* base */
+.area-card {
+  border: 2px solid transparent; /* lo pintamos según área */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  width: 210px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  transition: transform .2s ease;
+  color: #000; /* ← ahora todas las letras negras */
+  font-size: 1.05rem;
+}
+
+/* flecha */
+.area-card .area-arrow {
+  font-size: 1.6rem;
+  line-height: 1;
+  display: block;
+  color: rgba(0,0,0,0.4);
+}
+
+/* hover genérico */
+.area-card:hover {
+  transform: translateY(-4px);
+}
+
+/* colores por área según tu lista */
+.area-social {
+  background: #2c7da0;         /* azul medio */
+  border-color: #2c7da0;
+  color: #000;
+}
+.area-emocional {
+  background: #ffb3d9;         /* rosado */
+  border-color: #ffb3d9;
+}
+.area-etico {
+  background: #c49a6c;         /* marrón cálido */
+  border-color: #c49a6c;
+}
+
+
+.area-psico {
+  background: #d5b3ff;         /* morado claro */
+  border-color: #d5b3ff;
+}
+.area-moral {
+  background: #ffd27f;         /* anaranjado claro */
+  border-color: #ffd27f;
+}
+.area-afectivo {
+  background: #baf2bb;         /* verde menta */
+  border-color: #baf2bb;
+}
+.area-espiritual {
+  background: #ffe066;         /* amarillo */
+  border-color: #ffe066;
+}
+
+/* aseguramos texto negro en todas, porque lo pidieron así */
+.area-social span,
+.area-emocional span,
+.area-etico span,
+.area-psico span,
+.area-moral span,
+.area-afectivo span,
+.area-espiritual span {
+  color: #000;
+}
+
+/* responsive: que las flechas bajen también */
+@media (max-width: 768px) {
+  .areas-row {
+    gap: 15px;
+  }
+  .area-card {
+    width: 44%;
+    height: 140px;
+  }
+}
+@media (max-width: 480px) {
+  .area-card {
+    width: 90%;
+  }
+}
+/* ====== DISTRIBUCIÓN DE FILAS ====== */
+
+.areas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.areas-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* primera fila con 4 cuadros alineados */
+.fila-1 {
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+/* segunda fila con 3 cuadros centrados */
+.fila-2 {
+  justify-content: center;
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .fila-1 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .areas-row {
+    flex-wrap: wrap;
+  }
+  .area-card {
+    width: 45%;
+  }
+}
+
+
+/* ====== COLORES PERSONALIZADOS PARA LOS SUBTÍTULOS DE INFORMACIÓN ====== */
+#justificacion h2 {
+  color: #0070c0;   /* azul */
+  font-weight: 700;
+}
+
+#objetivos h2 {
+  color: #00a651;   /* verde */
+  font-weight: 700;
+}
+
+#metodologia h2 {
+  color: #f57c00;   /* naranja */
+  font-weight: 700;
+}
+
+#direccion h2 {
+  color: #444;      /* gris oscuro neutro */
+  font-weight: 700;
+}
+
+/* un poco más de separación visual */
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+
+.area-switcher { margin: 1.25rem 0; }
+.switcher-tabs {
+  display:flex; gap:.5rem; background:#f6f6ff; padding:.5rem; border-radius:999px;
+}
+.tab-btn {
+  flex:1; padding:.6rem 1rem; border:none; border-radius:999px; background:transparent;
+  font-weight:600; cursor:pointer; transition:transform .06s ease;
+}
+.tab-btn:active { transform:scale(.98); }
+.tab-btn.is-active {
+  background:#fff; box-shadow:0 6px 16px rgba(0,0,0,.06); outline:2px solid transparent;
+}
+.psicologico .tab-btn.is-active { outline:2px solid #5a4ae3; }
+.info-card, .activity-grid { margin-top:1rem; }
+.quote { border-left:4px solid #5a4ae3; padding-left:.75rem; margin:.75rem 0; }
+
+/* Bloque general */
+.info-section {
+  margin: 1.5rem 0 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.06);
+  padding: 1.5rem;
+}
+
+/* Título de franja */
+.info-title {
+  background-color: #e5007e; /* tu fucsia */
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+/* Contenedor principal */
+.info-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Imagen */
+.info-img {
+  flex: 0 0 220px;
+  border: 4px solid #e5007e;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.info-img img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Texto */
+.info-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-content {
+    flex-direction: column;
+  }
+  .info-img {
+    margin: 0 auto;
+  }
+}
+.info-img {
+  flex: 0 0 220px;
+  border: none;          /* ❌ se eliminó el borde */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.info-img img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.info-final {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.final-img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+/* --- Sección Ruleta --- */
+.ruleta-section {
+  text-align: center;
+  margin: 2rem auto 3rem;
+  background-color: #fef6fa;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+}
+
+.ruleta-section h2 {
+  color: #e5007e;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.ruleta-section p {
+  color: #555;
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 0.5rem auto 1.5rem;
+  line-height: 1.6;
+}
+
+.ruleta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #e5007e, #00a7e1);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.ruleta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}

@@ -2,71 +2,142 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Información del Proyecto</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información del Proyecto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* --- ESTILO DEL VIDEO --- */
+    .video-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .video-section video {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-caption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <button class="nav-toggle" aria-label="Abrir menú de navegación">
-            <span class="hamburger"></span>
-        </button>
-        <ul class="nav-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="informacion.html" class="active">Información Proyecto</a></li>
-            <li><a href="areas.html">Áreas</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="informacion.html" class="active">Información Proyecto</a></li>
+      <li><a href="areas.html">Áreas</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section id="justificacion" class="section">
-            <h2>Justificación</h2>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo...
-            </p>
-        </section>
+  <main>
+    <!-- ==================== JUSTIFICACIÓN ==================== -->
+    <section id="justificacion" class="section">
+      <h2>Justificación</h2>
+      <p>
+        El desarrollo integral en la educación primaria constituye un pilar esencial para la formación de los
+        estudiantes, ya que abarca el crecimiento equilibrado de sus dimensiones cognitiva, emocional, social,
+        espiritual, física y ética. En este proceso, el docente desempeña un papel fundamental como guía y acompañante,
+        puesto que en esta etapa se establecen las bases del desarrollo personal y académico.
+      </p>
+      <p>
+        El Colegio María Auxiliadora de Quetzaltenango, inspirado en la pedagogía de San Juan Bosco y en el carisma
+        educativo de las Hijas de María Auxiliadora, promueve una educación basada en la razón, la religión y la
+        amabilidad. Desde esta visión salesiana, se busca formar personas responsables, solidarias y comprometidas con
+        los valores cristianos, capaces de transformar su entorno desde el amor y la esperanza.
+      </p>
+      <p>
+        Con el propósito de fortalecer este compromiso, se ha diseñado una página web lúdico-pedagógica dirigida al
+        profesorado de educación primaria. Este recurso digital ofrece herramientas, actividades y dinámicas organizadas
+        en siete áreas del desarrollo humano, con el fin de apoyar la planificación educativa y favorecer un
+        acompañamiento más personalizado, significativo y coherente con la misión institucional.
+      </p>
+      <p>
+        Asimismo, la propuesta responde a la necesidad de integrar recursos digitales innovadores en la práctica
+        docente, promoviendo la motivación, la creatividad y la reflexión pedagógica. De este modo, la página web no
+        solo constituye un apoyo didáctico, sino también una oportunidad para potenciar la formación continua del
+        profesorado en torno al desarrollo integral del estudiante.
+      </p>
+    </section>
 
-        <section id="objetivos" class="section">
-            <h2>Objetivos</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua...
-            </p>
-        </section>
+    <!-- ==================== VIDEO DESPUÉS DE JUSTIFICACIÓN ==================== -->
+    <section class="video-section">
+      <video controls>
+        <source src="images/video-proyecto.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <p class="video-caption">Video: Presentación del Proyecto Educativo</p>
+    </section>
 
-        <section id="metodologia" class="section">
-            <h2>Metodología</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua...
-            </p>
-        </section>
+    <!-- ==================== ENLACE A LA RULETA ==================== -->
+    <section class="ruleta-section">
+      <h2>Ruleta de Desarrollo Integral- Nivel Primaria
+</h2>
 
-        <section id="direccion" class="section">
-            <h2>Dirección del Colegio</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua...
-            </p>
-        </section>
-    </main>
+      <a href="https://wordwall.net/es/resource/101175787" target="_blank" rel="noopener" class="ruleta-btn">
+        🎡 Abrir Ruleta Interactiva
+      </a>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p><b>Estudiante:</b> Isabel Nicolás Agustín</p>
-                <p><b>Universidad:</b> La Universidad del Valle de Guatemala, Facultad de Educación</p>
-                <p><b>Carrera:</b> Licenciatura en Educación con Especialidad en Educación Primaria</p>
-            </div>
-            <div class="footer-right">
-                <img src="images/uvg-logo.png" alt="Logo de la Universidad" class="footer-logo">
-            </div>
-        </div>
-    </footer>
+    <!-- ==================== OBJETIVO ==================== -->
+    <section id="objetivos" class="section">
+      <h2>Objetivo</h2>
+      <p>
+        Promover el aprendizaje integral de los estudiantes mediante la selección de diferentes dinámicas y actividades
+        de la página web lúdica, adaptadas a las necesidades y características de cada grado, favoreciendo así una
+        educación más significativa, participativa e innovadora.
+      </p>
+    </section>
+
+    <!-- ==================== METODOLOGÍA ==================== -->
+    <section id="metodologia" class="section">
+      <h2>Metodología</h2>
+      <p>
+        Se empleará una metodología basada en el Aprendizaje Constructivista y el Aprendizaje Vivencial, en donde los
+        estudiantes construirán conocimientos a partir de sus experiencias previas, vinculándolos con las actividades de
+        la página web lúdica, mientras el docente los guía y orienta. A través de dinámicas y juegos, los estudiantes
+        participarán activamente, explorando sus habilidades de manera integral.
+      </p>
+      <p>
+        Esta metodología permite adaptar las actividades a las necesidades de cada grado, fomentando la autonomía, la
+        colaboración, la participación y el desarrollo integral en todas las áreas del aprendizaje, haciendo del proceso
+        educativo una experiencia innovadora y significativa para los estudiantes.
+      </p>
+    </section>
+
+    <!-- ==================== DIRECCIÓN DEL COLEGIO ==================== -->
+    <section id="direccion" class="section">
+      <h2>Dirección del Colegio</h2>
+      <p>
+        3a. calle 16-17 zona 3 Quetzaltenango <br>
+        Instituto María Auxiliadora zona 3.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><b>Estudiante:</b> Isabel Nicolás Agustín</p>
+        <p><b>Universidad:</b> Universidad del Valle de Guatemala – Facultad de Educación</p>
+        <p><b>Carrera:</b> Licenciatura en Educación con Especialidad en Educación Primaria</p>
+      </div>
+      <div class="footer-right">
+        <img src="images/uvg-logo.png" alt="Logo de la Universidad" class="footer-logo" />
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

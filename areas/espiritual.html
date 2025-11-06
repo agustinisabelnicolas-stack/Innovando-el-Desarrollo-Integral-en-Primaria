@@ -2,195 +2,326 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Área de Desarrollo Espiritual</title>
-    <link rel="stylesheet" href="../styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área Espiritual</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <button class="nav-toggle" aria-label="Abrir menú de navegación">
-            <span class="hamburger"></span>
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../informacion.html">Información Proyecto</a></li>
+      <li><a href="../areas.html" class="active">Áreas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="area-title">Área Espiritual</h1>
+    <section class="area-switcher psicologico" aria-label="Cambiar vista de contenido">
+      <div class="switcher-tabs" role="tablist">
+        <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="panel-info" id="tab-info">
+          Información
         </button>
-        <ul class="nav-list">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../informacion.html">Información Proyecto</a></li>
-            <li><a href="../areas.html" class="active">Áreas</a></li>
-        </ul>
-    </nav>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-dinamicas" id="tab-dinamicas">
+          Dinámicas
+        </button>
+      </div>
 
-    <main>
-        <h1 class="area-title">Área de Desarrollo Espiritual</h1>
-        <div class="activities-container">
+      <!-- Panel: Información (visible por defecto) -->
+      <div id="panel-info" role="tabpanel" aria-labelledby="tab-info">
+        <!-- TU CONTENIDO DE INFORMACIÓN AQUÍ -->
+        <section class="info-section psicologico">
+          <h2 class="info-title">La espiritualidad en el corazón Salesiano</h2>
 
-            <div class="activity-section primero">
-                <h2>Es un río</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 5.º y 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar la reflexión interna reconociendo sus experiencias, desafíos y
-                    aprendizajes, y promoviendo la conciencia de su propio crecimiento espiritual.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se invita a los participantes a imaginar su vida como un río, con momentos de calma, obstáculos
-                        y aprendizajes. El audiovisual de un río ayuda a crear un ambiente relajado, favoreciendo la
-                        introspección y la apertura al diálogo.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/FpdTL2EdEGI" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Es un río"></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section segundo">
-                <h2>Baile: La grandeza de Dios</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Expresar la fe y la alegría a través del baile.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Preparar un espacio amplio y seguro.</li>
-                    <li>Practicar los movimientos con los niños.</li>
-                    <li>Reflexionar sobre el mensaje de la canción.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/3qj8ESOCJyE" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Baile: La grandeza de Dios"></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section primero">
-                <h2>Rítmica</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Expresar la espiritualidad a través del movimiento.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Escuchar la música y mostrar los movimientos básicos.</li>
-                    <li>Practicar la secuencia de movimientos junto con los estudiantes.</li>
-                    <li>Cerrar con reflexión sobre el mensaje de la música y los movimientos.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/uzXpvILRMog" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Rítmica (Uptown Funk - Percusión corporal)"></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section segundo">
-                <h2>Cristo presente</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Reconocer la presencia de Cristo en la vida diaria a través de una
-                    dinámica grupal.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Explicar que Cristo está presente en cada centro educativo.</li>
-                    <li>Realizar una breve actividad participativa (por ejemplo: compartir una frase, gesto o reflexión
-                        que exprese la presencia de Cristo).</li>
-                    <li>Cerrar con un canto o una oración corta en grupo.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/-kaUc6B7R0I" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Cristo presente"></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section primero">
-                <h2>Tenemos tanto</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Reconocer dones y bendiciones, fortaleciendo la gratitud y la
-                    espiritualidad.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Acompañar a los estudiantes a ser agradecidos con sus mayores y principalmente con Dios. </li>
-                    <li>Reflexionar en grupo sobre la importancia de reconocer y agradecer los dones recibidos.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/KYHC_XuCImg" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Tenemos tanto"></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section segundo">
-                <h2>Pablito</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 4.º a 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Despertar el entusiasmo para ir a evangelizar en diferentes lugares.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Presentar la historia de Pablito y los valores que muestra.</li>
-                    <li>Los estudiantes leen o ven la historia de Pablito.</li>
-                    <li>Conversar sobre los valores y cómo aplicarlos en la vida diaria.</li>
-                    <li>Dibujar, escribir o listar formas de ayudar a los demás.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n-2fkkukin8?si=mlbrrYc3gYxUGzEP"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section primero">
-                <h2>Rondo Alla Turca - Mozart</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 1.º a 3.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar la conexión espiritual a través de la música clásica.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presenta al grupo que la música clásica, como "Rondo Alla Turca" de Mozart, tiene el poder de
-                        conectar con lo más profundo del ser. A través de esta dinámica, los estudiantes experimentarán
-                        cómo la armonía y el ritmo pueden generar un ambiente de paz y reflexión, promoviendo el
-                        bienestar espiritual.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/cjf9kic0q2E" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Rondo Alla Turca - Mozart"></iframe>
-                </div>
-            </div>
-
-            <div class="activity-section segundo">
-                <h2>Instrumentacja</h2>
-                <p><strong>Desarrollo:</strong> Espiritual.</p>
-                <p><strong>Grado:</strong> 1.º a 3.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Desarrollar la apreciación musical y su capacidad para elevar el espíritu.
-                </p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presenta a los niños que la música tiene el poder de conectar con lo más profundo del ser. A
-                        través de esta dinámica, los estudiantes experimentarán cómo la armonía y el ritmo pueden
-                        generar un ambiente de paz y reflexión, promoviendo el bienestar espiritual.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/-97kKGJG_iI&list=RD-97kKGJG_iI&start_radio=1"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Instrumentacja"></iframe>
-                </div>
-            </div>
-
+         
+            
+            <div class="info-final">
+          <img src="imagenes/infoAfectivo2.png" alt="Representación visual de la psicología educativa" class="final-img">
         </div>
-    </main>
+    
+        </section>
+        <section class="info-section psicologico">
+          <h2 class="info-title" style="background-color:#00a7e1;">
+            La espiritualidad salesiana
+          </h2>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p><b>Estudiante:</b> Isabel Nicolás Agustín</p>
-                <p><b>Universidad:</b> La Universidad del Valle de Guatemala, Facultad de Educación</p>
-                <p><b>Carrera:</b> Licenciatura en Educación con Especialidad en Educación Primaria</p>
+          <div class="info-content">
+            <figure class="info-img" style="border-color:#00a7e1;">
+              <img src="./imagenes/infoAfectivo3.png" alt="Don Bosco con estudiantes">
+            </figure>
+
+            <div class="info-text">
+              <p>
+                Constituye una forma particular de seguir a Jesucristo, inspirada en el ejemplo de San Juan Bosco y
+                caracterizada por una especial sensibilidad hacia ciertos rasgos de Jesús revelados en los Evangelios.
+                (Familia Salesiana de Chile, s.f.) Se considera que esta espiritualidad es una expresión viva del amor
+                de Dios hacia los jóvenes, que impulsa a servir con alegría, sencillez y entrega, haciendo presente el
+                rostro de Cristo en cada realidad educativa y pastoral.
+              </p>
             </div>
-            <div class="footer-right">
-                <img src="../images/uvg-logo.png" alt="Logo de la Universidad" class="footer-logo">
+          </div>
+        </section>
+
+        <section class="info-section psicologico">
+          <h2 class="info-title" style="background-color:#e5007e;">
+            La dimensión espiritual- trascendente
+          </h2>
+
+          <div class="info-content">
+            <figure class="info-img" style="border-color:#e5007e;">
+              <img src="./imagenes/infoAfectivo4.png" alt="Estudiantes trabajando en equipo con ideas creativas">
+            </figure>
+
+            <div class="info-text">
+              <p>
+                Implica la capacidad del ser humano de ir más allá de su situación actual, buscando de manera constante
+                su evolución y perfeccionamiento personal. (Familia Salesiana de Chile, s.f.) Considero que esta
+                dimensión invita a mantener una apertura continua a Dios, fuente de todo crecimiento interior. Es un
+                llamado a vivir en permanente renovación espiritual, reflejando su amor en la labor educativa.
+              </p>
             </div>
-        </div>
-    </footer>
+          </div>
+        </section>
+        <!-- Imagen grande al final -->
+       
+
+      </div>
+
+      <!-- Panel: Dinámicas (OCULTO al inicio) -->
+      <div id="panel-dinamicas" role="tabpanel" aria-labelledby="tab-dinamicas" hidden>
+        <section class="activity-grid">
+          <!-- 1. Es un río -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Es un río</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 5.º y 6.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Fomentar la reflexión interna reconociendo sus experiencias, desafíos y aprendizajes, y promoviendo la
+              conciencia de su propio crecimiento espiritual.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Se invita a los participantes a imaginar su vida como un río, con momentos de calma, obstáculos y
+              aprendizajes. El audiovisual de un río ayuda a crear un ambiente relajado, favoreciendo la introspección
+              y la apertura al diálogo.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=FpdTL2EdEGI" target="_blank" rel="noopener" class="video-link">
+              <img src="./imagenes/video-espiritual-1.jpg" alt="Es un río - video" class="video-thumb">
+            </a>
+          </div>
+
+          <!-- 2. Mira lo que hizo Dios -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Mira lo que hizo Dios</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 6.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Expresar la fe y la alegría a través del baile.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Preparar un espacio amplio y seguro. Practicar los movimientos con los niños. Reflexionar sobre el mensaje
+              de la canción.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=3qj8ESOCJyE&t=1s" target="_blank" rel="noopener"
+              class="video-link">
+              <img src="./imagenes/video-espiritual-2.jpg" alt="Mira lo que hizo Dios - video" class="video-thumb">
+            </a>
+          </div>
+
+          <!-- 3. Rítmica -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Rítmica</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 6.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Expresar la espiritualidad a través del movimiento.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Escuchar la música y mostrar los movimientos básicos. Practicar la secuencia de movimientos junto con los
+              estudiantes. Cerrar con reflexión sobre el mensaje de la música y los movimientos.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=uzXpvILRMog" target="_blank" rel="noopener" class="video-link">
+              <img src="./imagenes/video-espiritual-3.jpg" alt="Rítmica - video" class="video-thumb">
+            </a>
+          </div>
+
+          <!-- 4. Cristo presente -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Cristo presente</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 6.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Reconocer la presencia de Cristo en la vida diaria a través de una dinámica grupal.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Explicar que Cristo está presente en cada centro educativo. Realizar una breve actividad participativa
+              (por ejemplo: compartir una frase, gesto o reflexión que exprese la presencia de Cristo). Cerrar con un
+              canto o una oración corta en grupo.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=-kaUc6B7R0I&t=3s" target="_blank" rel="noopener"
+              class="video-link">
+              <img src="./imagenes/video-espiritual-4.jpg" alt="Cristo presente - video" class="video-thumb">
+            </a>
+          </div>
+
+          <!-- 5. Tenemos tanto -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Tenemos tanto</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 6.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Reconocer dones y bendiciones, fortaleciendo la gratitud y la espiritualidad.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Acompañar a los estudiantes a ser agradecidos con sus mayores y principalmente con Dios. Reflexionar en
+              grupo sobre la importancia de reconocer y agradecer los dones recibidos.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=KYHC_XuCImg&t=6s" target="_blank" rel="noopener"
+              class="video-link">
+              <img src="./imagenes/video-espiritual-5.jpg" alt="Tenemos tanto - video" class="video-thumb">
+            </a>
+          </div>
+
+          <!-- 6. Pablito -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Pablito</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 4.º a 6.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Despertar el entusiasmo para ir a evangelizar en diferentes lugares.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Presentar la historia de Pablito y los valores que muestra. Los estudiantes leen o ven la historia.
+              Conversar sobre los valores y cómo aplicarlos en la vida diaria. Dibujar, escribir o listar formas de
+              ayudar a los demás.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=n-2fkkukin8&t=2s" target="_blank" rel="noopener"
+              class="video-link">
+              <img src="./imagenes/video-espiritual-6.jpg" alt="Pablito - video" class="video-thumb">
+            </a>
+          </div>
+
+          <!-- 7. Rondo Alla Turca - Mozart -->
+          <div class="activity-section espiritual">
+            <h2 class="act-titulo">Rondo Alla Turca – Mozart</h2>
+            <h3 class="act-subtitulo">Desarrollo Espiritual</h3>
+
+            <p class="act-grado"><strong>Grado: 1.º a 3.º de primaria</strong></p>
+
+            <p class="act-texto">
+              <strong>Objetivo:</strong>
+              Fomentar la conexión espiritual a través de la música clásica.
+            </p>
+
+            <p class="act-texto">
+              <strong class="act-label-azul">Motivación:</strong>
+              Se presenta al grupo que la música clásica, como “Rondo Alla Turca” de Mozart, tiene el poder de conectar
+              con lo más profundo del ser. A través de esta dinámica, los estudiantes experimentarán cómo la armonía
+              y el ritmo pueden generar un ambiente de paz y reflexión, promoviendo el bienestar espiritual.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=cjf9kic0q2E&t=1s" target="_blank" rel="noopener"
+              class="video-link">
+              <img src="./imagenes/video-espiritual-7.jpg" alt="Rondo Alla Turca - video" class="video-thumb">
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><b>Estudiante:</b> Isabel Nicolás Agustín</p>
+        <p><b>Universidad:</b> La Universidad del Valle de Guatemala, Facultad de Educación</p>
+        <p><b>Carrera:</b> Licenciatura en Educación con Especialidad en Educación Primaria</p>
+      </div>
+      <div class="footer-right">
+        <img src="../images/uvg-logo.png" alt="Logo de la Universidad" class="footer-logo">
+      </div>
+    </div>
+  </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll('.area-switcher .tab-btn');
+    const panels = document.querySelectorAll('.area-switcher [role="tabpanel"]');
+
+    function activateTab(targetId) {
+      tabs.forEach(btn => {
+        const active = btn.id === 'tab-' + targetId;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-selected', active);
+      });
+
+      panels.forEach(panel => {
+        const show = panel.id === 'panel-' + targetId;
+        panel.hidden = !show; // ✅ solo muestra el panel seleccionado
+      });
+    }
+
+    // Al hacer clic
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.id.replace('tab-', '');
+        activateTab(targetId);
+      });
+    });
+
+    // Soporte de flechas izq/der
+    const tabList = document.querySelector('.switcher-tabs');
+    tabList.addEventListener('keydown', (e) => {
+      const idx = Array.from(tabs).findIndex(t => t.classList.contains('is-active'));
+      if (e.key === 'ArrowRight') tabs[(idx + 1) % tabs.length].click();
+      if (e.key === 'ArrowLeft') tabs[(idx - 1 + tabs.length) % tabs.length].click();
+    });
+
+    // Mostrar solo información por defecto o hash si existe
+    const hash = window.location.hash.replace('#', '');
+    activateTab(hash === 'dinamicas' ? 'dinamicas' : 'info');
+  });
+</script>
 
 </html>

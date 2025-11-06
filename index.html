@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Innovando el Desarrollo Integral en Primaria - Inicio</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Innovando el Desarrollo Integral en Primaria - Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* --- ESTILO DEL LOGO EN LA PÁGINA PRINCIPAL --- */
+    .logo-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .logo-section img {
+      max-width: 320px; /* tamaño controlado del logo */
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-section img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <button class="nav-toggle" aria-label="Abrir menú de navegación">
-            <span class="hamburger"></span>
-        </button>
-        <ul class="nav-list">
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="informacion.html">Información Proyecto</a></li>
-            <li><a href="areas.html">Áreas</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="informacion.html">Información Proyecto</a></li>
+      <li><a href="areas.html">Áreas</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <!-- Banner principal -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Innovando el Desarrollo Integral en Primaria</h1>
+        <h2>Colegio María Auxiliadora, Quetzaltenango</h2>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Innovando el Desarrollo Integral en Primaria</h1>
-                <h2>Colegio María Auxiliadora, Quetzaltenango</h2>
-            </div>
-        </section>
-        <section id="descripcion" class="section">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus animi iusto obcaecati, magni quo quia.
-                Tempora excepturi odio magni eos nisi dolore impedit laboriosam enim animi nostrum voluptates, aliquam
-                omnis.</p>
-            <div class="logo-placeholder">Logo del colegio</div>
-        </section>
-    </main>
+    <!-- Logo del colegio -->
+    <section class="logo-section">
+      <img src="images/logo-colegio.png" alt="Logo del Colegio María Auxiliadora">
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p><b>Estudiante:</b> Isabel Nicolás Agustín</p>
-                <p><b>Universidad:</b> La Universidad del Valle de Guatemala, Facultad de Educación</p>
-                <p><b>Carrera:</b> Licenciatura en Educación con Especialidad en Educación Primaria</p>
-            </div>
-            <div class="footer-right">
-                <img src="images/uvg-logo.png" alt="Logo de la Universidad" class="footer-logo">
-            </div>
-        </div>
-    </footer>
-    
+    <!-- Descripción breve -->
+    <section id="descripcion" class="section">
+      <p>
+        
+      </p>
+    </section>
+  </main>
 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><b>Estudiante:</b> Isabel Nicolás Agustín</p>
+        <p><b>Universidad:</b> La Universidad del Valle de Guatemala, Facultad de Educación</p>
+        <p><b>Carrera:</b> Licenciatura en Educación con Especialidad en Educación Primaria</p>
+      </div>
+      <div class="footer-right">
+        <img src="images/uvg-logo.png" alt="Logo de la Universidad" class="footer-logo">
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

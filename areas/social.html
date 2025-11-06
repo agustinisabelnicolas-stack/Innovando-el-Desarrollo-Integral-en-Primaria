@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Información del Proyecto</title>
+    <title>Área Social</title>
     <link rel="stylesheet" href="../styles.css" />
 </head>
 
@@ -21,145 +21,316 @@
     </nav>
 
     <main>
-        <h1 class="area-title">Área de Desarrollo Social</h1>
-        <div class="activities-container">
-
-            <div class="activity-section primero">
-                <h2>Shimi,Shami</h2>
-                <p><strong>Desarrollo:</strong> Social, emocional, afectivo, psicológico, ético y moral.</p>
-                <p><strong>Grado:</strong> Quinto y Sexto Primaria.</p>
-                <p><strong>Objetivo:</strong> Fortalecer la comunicación asertiva en las estudiantes.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se utiliza la dinámica “SHIMI, SHAMI” como juego rompehielos, que permite generar confianza,
-                        motivación y entusiasmo.</li>
-                    <li>Es de carácter rítmico y grupal.</li>
-                    <li>Ayuda a los estudiantes a concentrarse, practicar la escucha activa y conectarse entre sí.</li>
-                    <li>Prepara el espacio para reflexionar sobre la importancia de la comunicación asertiva y su aporte
-                        al desarrollo integral.</li>
-                    <li>Potencia el desarrollo social, emocional, afectivo, psicológico, ético y moral.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/Je6FmO4ra70" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
+        <h1 class="area-title">Área Social</h1>
+        <section class="area-switcher psicologico" aria-label="Cambiar vista de contenido">
+            <div class="switcher-tabs" role="tablist">
+                <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="panel-info"
+                    id="tab-info">
+                    Información
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-dinamicas"
+                    id="tab-dinamicas">
+                    Dinámicas
+                </button>
             </div>
 
-            <div class="activity-section segundo">
-                <h2>La Yenka</h2>
-                <p><strong>Desarrollo:</strong> Social.</p>
-                <p><strong>Grado:</strong> 1º a 3º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar la cooperación y la autoestima.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Mostrar un ejemplo de los pasos básicos de la coreografía.</li>
-                    <li>Dar un momento para que los estudiantes estiren sus músculos y se relajen.</li>
-                    <li>Reflexionar al final sobre la experiencia, lo aprendido y cómo se sintieron durante la
-                        actividad.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/cEHfDRlqs70" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+            <!-- Panel: Información (visible por defecto) -->
+            <div id="panel-info" role="tabpanel" aria-labelledby="tab-info">
+                <!-- TU CONTENIDO DE INFORMACIÓN AQUÍ -->
+                <section class="info-section psicologico">
+                    <h2 class="info-title">Social que Transforma Vidas</h2>
+
+                    <div class="info-content">
+                        <figure class="info-img">
+                            <img src="imagenes/infoSocial1.jpg" alt="Actividad de aprendizaje con figuras de colores">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                <strong>
+                                    La dimensión lúdica:</strong> La dimensión lúdica: la ludificación trasciende el
+                                ámbito del aprendizaje académico o del rendimiento escolar, ya que su propósito
+                                principal es fortalecer los vínculos positivos tanto entre los estudiantes como entre
+                                estos y el docente (Tituaña Villagómez, 2022). A través de las actividades lúdicas se
+                                potencia el desarrollo social de los estudiantes, pues el ser humano, por naturaleza,
+                                necesita del otro para interactuar, compartir y construir aprendizajes de manera
+                                conjunta.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-section psicologico">
+                    <h2 class="info-title" style="background-color:#00a7e1;">
+                        María Auxiliadora, Quetzaltenango
+                    </h2>
+
+                    <div class="info-content">
+                        <figure class="info-img" style="border-color:#00a7e1;">
+                            <img src="imagenes/infoSocial2.png" alt="Don Bosco con estudiantes">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                Las clases que se imparten en la institución tienen como propósito ofrecer a las
+                                estudiantes un aprendizaje significativo mediante diversas áreas formativas, como las
+                                artes, la oratoria, el deporte y la música. Cada año, la educación exige la
+                                incorporación de nuevas herramientas lúdicas que contribuyan a fortalecer el desarrollo
+                                social de las estudiantes, promoviendo valores de convivencia, cooperación y respeto
+                                mutuo. Este proceso resulta esencial para que las futuras generaciones puedan enfrentar
+                                los desafíos de la globalización con creatividad, participación activa y una visión
+                                integral para la vida.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-section psicologico">
+                    <h2 class="info-title">Aprendizaje Basado en Problemas (ABP)</h2>
+
+                    <div class="info-content">
+                        <figure class="info-img">
+                            <img src="imagenes/infoSocial3.jpg" alt="Actividad de aprendizaje con figuras de colores">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                El ABP se define como una metodología activa de enseñanza que pone al estudiante en el
+                                centro del proceso educativo, promoviendo su participación autónoma y reflexiva en la
+                                construcción del conocimiento (De Arco Paternina, Santana Galindo y Gómez, 2022). En el
+                                colegio María Auxiliadora de Quetzaltenango se aplica esta metodología con las
+                                estudiantes, permitiendo el desarrollo de habilidades para la resolución de problemas,
+                                el trabajo colaborativo y el pensamiento crítico, fundamentales para su formación
+                                integral. Desde mi perspectiva, la aplicación del ABP no solo favorece el aprendizaje
+                                académico, sino que también potencia el desarrollo social de las estudiantes al
+                                fortalecer la comunicación, la empatía y la cooperación entre pares, aspectos esenciales
+                                en su proceso de crecimiento personal y educativo.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-section psicologico">
+                    <h2 class="info-title" style="background-color:#00a7e1;">
+                        El rol del docente en el fortalecimiento de las habilidades blandas postpandemia
+                    </h2>
+
+                    <div class="info-content">
+                        <figure class="info-img" style="border-color:#00a7e1;">
+                            <img src="imagenes/infoSocial4.jpg" alt="Don Bosco con estudiantes">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                La emergencia sanitaria provocada por la pandemia de COVID-19 afectó al sistema
+                                educativo, generando en algunos estudiantes dificultades para gestionar sus aspectos
+                                socioemocionales, lo que pone de manifiesto la necesidad de fortalecer el desarrollo de
+                                las habilidades blandas.
+                            </p>
+                            <p>
+                                El docente actual debe reunir las características que demanda el sistema educativo.
+                                Bustamante (2016) señala que la vocación, reflejada en el entusiasmo, la ilusión y la
+                                pasión por enseñar, favorece el desarrollo de dichas habilidades. Por su parte, Chinchay
+                                Huarcaya, Bartolomé Huamán y Ozoriaga Dávila (2023) destacan la importancia de las
+                                habilidades blandas en la práctica docente para fortalecer la relación con los
+                                estudiantes. En este sentido, resulta fundamental continuar innovando mediante la
+                                implementación de actividades apoyadas en la tecnología.
+
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Imagen grande al final -->
+                <div class="info-final">
+                    <img src="imagenes/infoSocial5.png" alt="Representación visual de la psicología educativa"
+                        class="final-img">
                 </div>
+
             </div>
 
-            <div class="activity-section primero">
-                <h2>Zumba</h2>
-                <p><strong>Desarrollo:</strong> Social.</p>
-                <p><strong>Grado:</strong> 1º a 3º de primaria.</p>
-                <p><strong>Objetivo:</strong> Mejorar la coordinación motriz y la cooperación a través de la actividad
-                    rítmica.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Preparar un espacio amplio y seguro.</li>
-                    <li>Explicar y mostrar los movimientos básicos de Zumba.</li>
-                    <li>Realizar la rutina junto con los niños, guiándolos y animándolos[cite: 20].</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/ymigWt5TOV8" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
+            <!-- Panel: Dinámicas (OCULTO al inicio) -->
+            <div id="panel-dinamicas" role="tabpanel" aria-labelledby="tab-dinamicas" hidden>
+                <section class="activity-grid">
+                    <!-- Shimi, Shami -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Shimi, Shami</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social, emocional, afectivo, psicológico, ético y moral
+                        </h3>
 
-            <div class="activity-section segundo">
-                <h2>Teatro del niño</h2>
-                <p><strong>Desarrollo:</strong> Social.</p>
-                <p><strong>Grado:</strong> 1º a 3º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar la expresión y la comunicación entre los niños.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Elegir un cuento o situación sencilla para dramatizar.</li>
-                    <li>Asignar roles a los niños y explicar sus papeles.</li>
-                    <li>Ensayar brevemente los movimientos y diálogos.</li>
-                    <li>Conversar sobre lo que aprendieron y cómo se sintieron.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/kv10bKIk7lE" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
+                        <p class="act-grado"><strong>Grado: 5.º a 6.º primaria</strong></p>
 
-            <div class="activity-section primero">
-                <h2>Mentiras Tralará</h2>
-                <p><strong>Desarrollo:</strong> Social.</p>
-                <p><strong>Grado:</strong> 1º a 2º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar la interacción, cooperación y diversión entre los niños.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Preparar un espacio amplio y seguro para que los niños puedan moverse.</li>
-                    <li>Cantar y acompañar la canción con movimientos o gestos sencillos.</li>
-                    <li>Realizar la actividad en grupo, animando a todos a participar.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/8OMVqcStEx4" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fortalecer la comunicación asertiva en las estudiantes.
+                        </p>
 
-            <div class="activity-section segundo">
-                <h2>Veo, veo</h2>
-                <p><strong>Desarrollo:</strong> Social.</p>
-                <p><strong>Grado:</strong> 1º a 2º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar la interacción, atención y cooperación entre los niños.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Formar un semicírculo con los niños.</li>
-                    <li>Explicar las reglas del juego: un niño dice “Veo, veo” y los demás deben adivinar lo que está
-                        observando[cite: 40].</li>
-                    <li>Turnarse para que cada niño participe[cite: 41].</li>
-                    <li>Animar a los niños a escuchar, esperar su turno y colaborar con pistas[cite: 42].</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/6qAGH0lSmlc" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Se utiliza la dinámica “SHIMI, SHAMI” como juego rompehielos que permite generar confianza,
+                            motivación
+                            y entusiasmo. Es de carácter rítmico y grupal.
+                        </p>
 
-            <div class="activity-section primero">
-                <h2>Pez Tiburón</h2>
-                <p><strong>Desarrollo:</strong> Social.</p>
-                <p><strong>Grado:</strong> 1º a 2º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar las emociones de manera creativa.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Ver el video “Pez Tiburón – Juego de Manos”.</li>
-                    <li>Comentar los valores y actitudes observadas en el video.</li>
-                    <li>Realizar un dibujo mostrando cómo ayudar a los demás o trabajar en equipo[cite: 50].</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/F8sFFTJgyqw" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
+                        <a href="https://www.youtube.com/watch?v=Je6FmO4ra70" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-social-1.jpg" alt="Shimi Shami - video" class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Dinámica "La llenca" -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Dinámica “La llenca”</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social</h3>
+
+                        <p class="act-grado"><strong>Grado: 3.º a 6.º primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar la cooperación y la autoestima.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Mostrar un ejemplo de los pasos básicos de la coreografía. Dar un momento para que los
+                            estudiantes
+                            estiren sus músculos y se relajen.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=cEHfDRlqs70" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-social-2.jpg" alt="Dinámica La llenca - video"
+                                class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Zumba -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Zumba</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 3.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Mejorar la coordinación motriz y la cooperación a través de la actividad rítmica.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Preparar un espacio amplio y seguro. Explicar y mostrar los movimientos básicos de Zumba.
+                            Realizar la
+                            rutina junto con los niños, guiándolos y animándolos.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=ymigWt5TOV8&t=1s" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-social-3.jpg" alt="Zumba - video" class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Teatro del niño -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Teatro del niño</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 3.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar la expresión y la comunicación entre los niños.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Elegir un cuento o situación sencilla para dramatizar. Asignar roles a los niños y explicar
+                            sus papeles.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=kv10bKIk7lE&t=4s" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-social-4.jpg" alt="Teatro del niño - video" class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Mentiras Tralará -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Mentiras Tralará</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 2.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Promover la interacción, la cooperación y la diversión entre los niños.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Preparar un espacio amplio y seguro para que los niños se desplacen. Cantar y acompañar la
+                            canción con
+                            movimientos o gestos sencillos. Realizar la actividad en grupo, animando a todos a
+                            participar.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=8OMVqcStEx4&t=2s" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-social-5.jpg" alt="Mentiras Tralará - video" class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Veo, veo -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Veo, veo</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 2.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar la interacción, atención y cooperación entre los niños.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Formar un semicírculo con los niños. Explicar las reglas del juego: un niño dice “Veo, veo”
+                            y los demás
+                            deben adivinar lo que está observando.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=6qAGH0lSmlc&t=2s" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-social-6.jpg" alt="Veo veo - video" class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Pez Tiburón -->
+                    <div class="activity-section social">
+                        <h2 class="act-titulo">Pez Tiburón</h2>
+                        <h3 class="act-subtitulo">Desarrollo Social</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 2.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar las emociones de manera creativa.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Ver el video “Pez Tiburón – Juego de manos”. Comentar los valores y actitudes observadas en
+                            el video.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=F8sFFTJgyqw&list=RDF8sFFTJgyqw&start_radio=1"
+                            target="_blank" rel="noopener" class="video-link">
+                            <img src="./imagenes/video-social-7.jpg" alt="Pez Tiburón - video" class="video-thumb">
+                        </a>
+                    </div>
+                </section>
             </div>
-        </div>
+        </section>
+
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -174,5 +345,44 @@
         </div>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll('.area-switcher .tab-btn');
+        const panels = document.querySelectorAll('.area-switcher [role="tabpanel"]');
+
+        function activateTab(targetId) {
+            tabs.forEach(btn => {
+                const active = btn.id === 'tab-' + targetId;
+                btn.classList.toggle('is-active', active);
+                btn.setAttribute('aria-selected', active);
+            });
+
+            panels.forEach(panel => {
+                const show = panel.id === 'panel-' + targetId;
+                panel.hidden = !show; // ✅ solo muestra el panel seleccionado
+            });
+        }
+
+        // Al hacer clic
+        tabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.id.replace('tab-', '');
+                activateTab(targetId);
+            });
+        });
+
+        // Soporte de flechas izq/der
+        const tabList = document.querySelector('.switcher-tabs');
+        tabList.addEventListener('keydown', (e) => {
+            const idx = Array.from(tabs).findIndex(t => t.classList.contains('is-active'));
+            if (e.key === 'ArrowRight') tabs[(idx + 1) % tabs.length].click();
+            if (e.key === 'ArrowLeft') tabs[(idx - 1 + tabs.length) % tabs.length].click();
+        });
+
+        // Mostrar solo información por defecto o hash si existe
+        const hash = window.location.hash.replace('#', '');
+        activateTab(hash === 'dinamicas' ? 'dinamicas' : 'info');
+    });
+</script>
 
 </html>

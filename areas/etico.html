@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Área de Desarrollo Ético</title>
+    <title>Área Ética</title>
     <link rel="stylesheet" href="../styles.css" />
 </head>
 
@@ -21,125 +21,208 @@
     </nav>
 
     <main>
-        <h1 class="area-title">Área de Desarrollo Ético</h1>
-        <div class="activities-container">
-
-            <div class="activity-section primero">
-                <h2>El nudo</h2>
-                <p><strong>Desarrollo:</strong> Ético.</p>
-                <p><strong>Grado:</strong> 4.º a 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Promover el respeto hacia el grupo en la resolución de un reto.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presenta al grupo la idea de que en la vida se enfrentan problemas o “nudos” que no se
-                        resuelven solos. Para salir adelante se necesita apoyo, respetar reglas básicas, ser justos y
-                        pensar no solo en el beneficio personal, sino en el de todos.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/Pt1Xt6r8Yzc" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="El nudo"></iframe>
-                </div>
+        <h1 class="area-title">Área Ética</h1>
+        <section class="area-switcher psicologico" aria-label="Cambiar vista de contenido">
+            <div class="switcher-tabs" role="tablist">
+                <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="panel-info"
+                    id="tab-info">
+                    Información
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-dinamicas"
+                    id="tab-dinamicas">
+                    Dinámicas
+                </button>
             </div>
 
-            <div class="activity-section segundo">
-                <h2>La maleta de problemas</h2>
-                <p><strong>Desarrollo:</strong> Ético.</p>
-                <p><strong>Grado:</strong> 4.º a 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Reflexionar sobre los problemas cotidianos y cómo afectan decisiones y
-                    comportamientos.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presenta al grupo que cada uno lleva consigo una "maleta" simbólica llena de problemas y
-                        preocupaciones. Al compartir y reflexionar sobre estos problemas, los estudiantes reconocerán la
-                        importancia de tomar decisiones éticas que mejoren su bienestar personal y los conviertan en
-                        ciudadanos responsables, capaces de ayudar a los demás.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/coQ6XWODjzc" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="La maleta de problemas"></iframe>
+            <!-- Panel: Información (visible por defecto) -->
+            <div id="panel-info" role="tabpanel" aria-labelledby="tab-info">
+                <!-- TU CONTENIDO DE INFORMACIÓN AQUÍ -->
+                <section class="info-section psicologico">
+                    <h2 class="info-title">La Ética como Pilar del Desarrollo Integral</h2>
+
+                    <div class="info-content">
+                        <figure class="info-img">
+                            <img src="imagenes/infoEtica1.png" alt="Actividad de aprendizaje con figuras de colores">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                Promover una formación ética y moral integral en niños y jóvenes implica definir con
+                                claridad el tipo de educación que se desea implementar (Calvo Camelo & Rodríguez Torres,
+                                2021). En este sentido, estos autores resaltan la importancia de una enseñanza centrada
+                                en valores, donde la formación ética desde edades tempranas contribuye al
+                                fortalecimiento de la convivencia y al desarrollo integral del estudiante.
+                            </p>
+                            <p>
+                                Siguiendo esta perspectiva teórica sobre la educación en valores, el Colegio María
+                                Auxiliadora de Quetzaltenango implementa prácticas pedagógicas centradas en la ética,
+                                adaptadas a la realidad y necesidades de sus estudiantes. Así, el colegio fomenta no
+                                solo el desarrollo académico, sino también la formación integral para la vida,
+                                promoviendo en cada estudiante la responsabilidad, el respeto y el compromiso con su
+                                entorno.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Imagen grande al final -->
+                <div class="info-final">
+                    <img src="imagenes/infoEtica2.png" alt="Representación visual de la psicología educativa"
+                        class="final-img">
                 </div>
+
             </div>
 
-            <div class="activity-section primero">
-                <h2>7 Juegos Divertidos Para No Aburrirse En Casa</h2>
-                <p><strong>Desarrollo:</strong> Ético.</p>
-                <p><strong>Grado:</strong> 1.º a 3.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar actividades en casa para mejorar la comunicación.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Los niños disfrutarán en casa ejercitando dinámicas que les permitan divertirse mientras
-                        practican valores como el respeto, la cooperación y la responsabilidad.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/2_RIsnpq0gY" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="7 JUEGOS DIVERTIDOS para no aburrirse en casa"></iframe>
-                </div>
-            </div>
+            <!-- Panel: Dinámicas (OCULTO al inicio) -->
+            <div id="panel-dinamicas" role="tabpanel" aria-labelledby="tab-dinamicas" hidden>
+                <section class="activity-grid">
+                    <!-- La maleta de problemas -->
+                    <div class="activity-section etico">
+                        <h2 class="act-titulo">La maleta de problemas</h2>
+                        <h3 class="act-subtitulo">Desarrollo Ético</h3>
 
-            <div class="activity-section primero">
-                <h2>Duelo del Tangram</h2>
-                <p><strong>Desarrollo:</strong> Ético.</p>
-                <p><strong>Grado:</strong> 4.º a 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Fomentar valores como la cooperación y la paciencia a través del uso del
-                    juego Tangram, promoviendo el razonamiento ético.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presentará a los estudiantes un video sobre el juego Tangram para despertar el interés por
-                        aprender de manera divertida. A partir del video, se generará una conversación sobre cómo las
-                        actividades lúdicas pueden ayudarnos a practicar valores como la tolerancia, el trabajo en
-                        grupo.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SX6vjXui3Qc?si=ELSGhR-tV6AXhLR2"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+                        <p class="act-grado"><strong>Grado: 4.º a 6.º de primaria</strong></p>
 
-            <div class="activity-section primero">
-                <h2>Clasificacion Y Seriacion</h2>
-                <p><strong>Desarrollo:</strong> Ético.</p>
-                <p><strong>Grado:</strong> 4.º a 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> Promover el respeto, hacia el grupo en la resolución de un reto.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presenta al grupo la idea de que en la vida se enfrentan problemas o “nudos” que no se
-                        resuelven solos. Para salir adelante se necesita apoyo, respetar reglas básicas, ser justos y
-                        pensar no solo en el beneficio personal, sino en el de todos.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9f0j5tcUPgw?si=Pb9bEjLWpGx2Ip2r"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Reflexionar sobre los problemas cotidianos y cómo afectan decisiones y comportamientos.
+                        </p>
 
-            <div class="activity-section primero">
-                <h2>Jugando Con Conjuntos</h2>
-                <p><strong>Desarrollo:</strong> Ético.</p>
-                <p><strong>Grado:</strong> 4.º a 6.º de primaria.</p>
-                <p><strong>Objetivo:</strong> • Promover el respeto, hacia el grupo en la resolución de un reto.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Se presenta al grupo la idea de que en la vida se enfrentan problemas o “nudos” que no se
-                        resuelven solos. Para salir adelante se necesita apoyo, respetar reglas básicas, ser justos y
-                        pensar no solo en el beneficio personal, sino en el de todos.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o-sbyBXymO8?si=DYZBkD7XCgAOHggA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Se presenta al grupo que cada uno lleva consigo una “maleta” simbólica llena de problemas y
+                            preocupaciones.
+                            Al compartir y reflexionar sobre estos problemas, los estudiantes reconocerán la importancia
+                            de tomar
+                            decisiones éticas que mejoren su bienestar personal y los conviertan en ciudadanos
+                            responsables.
+                        </p>
 
-        </div>
+                        <a href="https://www.youtube.com/watch?v=coQ6XWODjzc" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-etico-1.jpg" alt="La maleta de problemas - video"
+                                class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- 7 juegos divertidos para no aburrirse en casa -->
+                    <div class="activity-section etico">
+                        <h2 class="act-titulo">7 juegos divertidos para no aburrirse en casa</h2>
+                        <h3 class="act-subtitulo">Desarrollo Ético</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 3.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar actividades en casa para mejorar la comunicación.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Los niños disfrutarán en casa ejercitando dinámicas que les permitan divertirse mientras
+                            practican
+                            valores
+                            como el respeto, la cooperación y la responsabilidad.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=2_RIsnpq0gY&t=2s" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-etico-2.jpg" alt="7 juegos divertidos - video"
+                                class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Duelo del Tangram -->
+                    <div class="activity-section etico">
+                        <h2 class="act-titulo">Duelo del Tangram</h2>
+                        <h3 class="act-subtitulo">Desarrollo Ético</h3>
+
+                        <p class="act-grado"><strong>Grado: 4.º a 6.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar valores como la cooperación y la paciencia a través del uso del juego Tangram,
+                            promoviendo el
+                            razonamiento ético.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Se presentará a los estudiantes un video sobre el juego Tangram para despertar el interés
+                            por aprender
+                            de
+                            manera divertida. A partir del video, se generará una conversación sobre cómo las
+                            actividades lúdicas
+                            pueden
+                            ayudarnos a practicar valores como la tolerancia, el trabajo en grupo y el respeto a las
+                            reglas.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=SX6vjXui3Qc" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-etico-3.jpg" alt="Duelo del Tangram - video" class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Clasificación y seriación -->
+                    <div class="activity-section etico">
+                        <h2 class="act-titulo">Clasificación y seriación</h2>
+                        <h3 class="act-subtitulo">Desarrollo Ético</h3>
+
+                        <p class="act-grado"><strong>Grado: 4.º a 6.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Promover el respeto hacia el grupo en la resolución de un reto.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Se presenta al grupo la idea de que en la vida se enfrentan problemas o “nudos” que no se
+                            resuelven
+                            solos.
+                            Para salir adelante se necesita apoyo, respetar reglas básicas, ser justos y pensar en el
+                            bien de todos.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=9f0j5tcUPgw" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-etico-4.jpg" alt="Clasificación y seriación - video"
+                                class="video-thumb">
+                        </a>
+                    </div>
+
+                    <!-- Jugando con conjuntos -->
+                    <div class="activity-section etico">
+                        <h2 class="act-titulo">Jugando con conjuntos</h2>
+                        <h3 class="act-subtitulo">Desarrollo Ético</h3>
+
+                        <p class="act-grado"><strong>Grado: 4.º a 6.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Promover el respeto hacia el grupo en la resolución de un reto.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Al igual que en la actividad anterior, se presenta la idea de que los problemas se resuelven
+                            mejor
+                            cuando
+                            se trabaja en equipo, se respetan las reglas y se piensa en el bienestar común.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=o-sbyBXymO8&t=4s" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-etico-5.jpg" alt="Jugando con conjuntos - video"
+                                class="video-thumb">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
+
 
 
     <footer>
@@ -155,5 +238,44 @@
         </div>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll('.area-switcher .tab-btn');
+        const panels = document.querySelectorAll('.area-switcher [role="tabpanel"]');
+
+        function activateTab(targetId) {
+            tabs.forEach(btn => {
+                const active = btn.id === 'tab-' + targetId;
+                btn.classList.toggle('is-active', active);
+                btn.setAttribute('aria-selected', active);
+            });
+
+            panels.forEach(panel => {
+                const show = panel.id === 'panel-' + targetId;
+                panel.hidden = !show; // ✅ solo muestra el panel seleccionado
+            });
+        }
+
+        // Al hacer clic
+        tabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.id.replace('tab-', '');
+                activateTab(targetId);
+            });
+        });
+
+        // Soporte de flechas izq/der
+        const tabList = document.querySelector('.switcher-tabs');
+        tabList.addEventListener('keydown', (e) => {
+            const idx = Array.from(tabs).findIndex(t => t.classList.contains('is-active'));
+            if (e.key === 'ArrowRight') tabs[(idx + 1) % tabs.length].click();
+            if (e.key === 'ArrowLeft') tabs[(idx - 1 + tabs.length) % tabs.length].click();
+        });
+
+        // Mostrar solo información por defecto o hash si existe
+        const hash = window.location.hash.replace('#', '');
+        activateTab(hash === 'dinamicas' ? 'dinamicas' : 'info');
+    });
+</script>
 
 </html>

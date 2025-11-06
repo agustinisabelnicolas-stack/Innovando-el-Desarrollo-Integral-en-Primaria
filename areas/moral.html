@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Área de Desarrollo Moral</title>
+    <title>Área Moral</title>
     <link rel="stylesheet" href="../styles.css" />
 </head>
 
@@ -21,30 +21,122 @@
     </nav>
 
     <main>
-        <h1 class="area-title">Área de Desarrollo Moral</h1>
-        <div class="activities-container">
-
-            <!-- Actividad 1: 9 juegos para cumpleaños -->
-            <div class="activity-section primero">
-                <h2>9 juegos para los cumpleaños de los niños</h2>
-                <p><strong>Desarrollo:</strong> Moral.</p>
-                <p><strong>Grado:</strong> 1º a 3º Primaria.</p>
-                <p><strong>Objetivo / Motivación general:</strong> Fomentar la participación equitativa y el respeto
-                    mutuo durante los juegos grupales.</p>
-                <h3>Motivación:</h3>
-                <ul>
-                    <li>Fomentar la participación equitativa y el respeto mutuo durante los juegos grupales.</li>
-                </ul>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/YKVvQj_b6EE"
-                        title="9 juegos para los cumpleaños de los niños - Pulcino Educativo" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
+        <h1 class="area-title">Área Moral</h1>
+        <section class="area-switcher psicologico" aria-label="Cambiar vista de contenido">
+            <div class="switcher-tabs" role="tablist">
+                <button class="tab-btn is-active" role="tab" aria-selected="true" aria-controls="panel-info"
+                    id="tab-info">
+                    Información
+                </button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-dinamicas"
+                    id="tab-dinamicas">
+                    Dinámicas
+                </button>
             </div>
 
-        </div>
+            <!-- Panel: Información (visible por defecto) -->
+            <div id="panel-info" role="tabpanel" aria-labelledby="tab-info">
+                <!-- TU CONTENIDO DE INFORMACIÓN AQUÍ -->
+                <section class="info-section psicologico">
+                    <h2 class="info-title">Moral que Inspira Aprendizaje </h2>
+
+                    <div class="info-content">
+                        <figure class="info-img">
+                            <img src="imagenes/infoMoral1.png" alt="Actividad de aprendizaje con figuras de colores">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                La formación moral no es algo que surge de manera automática; todo ser humano es
+                                responsable de sus actos y de lo que proyecta hacia los demás, especialmente hacia los
+                                niños, quienes observan y aprenden de cada ejemplo que reciben. En este contexto, según
+                                Solís Vargas (2022), el desarrollo moral se concibe como un proceso formativo orientado
+                                a promover, desde la infancia, la toma de conciencia sobre la conducta social y la
+                                capacidad de actuar de manera libre y responsable. Considero que este proceso es
+                                fundamental para la formación integral del estudiante, ya que fortalece valores como el
+                                respeto, la empatía y la responsabilidad. Además, permite construir una convivencia
+                                basada en la justicia y el compromiso con el bien común.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-final">
+                        <img src="imagenes/infoMoral2.png" alt="Representación visual de la psicología educativa"
+                            class="final-img">
+                    </div>
+                </section>
+                <section class="info-section psicologico">
+                    <h2 class="info-title" style="background-color:#00a7e1;">
+                        Sistema Preventivo de Don Bosco
+                    </h2>
+
+                    <div class="info-content">
+                        <figure class="info-img" style="border-color:#00a7e1;">
+                            <img src="imagenes/infoMoral3.png" alt="Don Bosco con estudiantes">
+                        </figure>
+
+                        <div class="info-text">
+                            <p>
+                                Este modelo educativo integra la formación moral como eje central del crecimiento humano
+                                y cristiano. A través de sus pilares —la razón, la religión y el amor— busca orientar la
+                                conducta del estudiante hacia el bien, promoviendo decisiones libres, responsables y
+                                guiadas por los valores evangélicos.
+                            </p>
+                            <p>
+                                “Protección-prevención. El método educativo de Don Bosco es conocido en todo el mundo
+                                con el nombre de ‘Sistema Preventivo’.” (Salesianos del Perú, 2019, p. 22).
+                            </p>
+                            <p>
+                                Desde mi perspectiva, este sistema promueve una educación basada en el acompañamiento,
+                                la confianza y el amor hacia los estudiantes. Su valor se evidencia en el Colegio María
+                                Auxiliadora de Quetzaltenango, donde los docentes viven el espíritu salesiano al
+                                compartir con las alumnas durante el recreo, brindando un ejemplo de cercanía y cuidado,
+                                como el buen pastor que conoce y guía a sus ovejas. Asimismo, las hermanas acompañan el
+                                crecimiento espiritual y moral de las estudiantes mediante la vivencia de los valores y
+                                la clase de ERE, velando siempre por su bienestar integral. Este acompañamiento refleja
+                                el pilar de la religión dentro del Sistema Preventivo, al promover la formación en la
+                                fe, la moral y la vida cristiana. Además, se promueve la formación sacramental y se
+                                implementan actividades extracurriculares —como deporte, música, danza y oratoria— que
+                                fortalecen la convivencia, la expresión personal y la alegría, todo al estilo salesiano.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+
+            <!-- Panel: Dinámicas (OCULTO al inicio) -->
+            <div id="panel-dinamicas" role="tabpanel" aria-labelledby="tab-dinamicas" hidden>
+                <section class="activity-grid">
+                    <div class="activity-section moral">
+                        <h2 class="act-titulo">9 juegos para los cumpleaños de los niños</h2>
+                        <h3 class="act-subtitulo">Desarrollo Moral</h3>
+
+                        <p class="act-grado"><strong>Grado: 1.º a 3.º de primaria</strong></p>
+
+                        <p class="act-texto">
+                            <strong>Objetivo:</strong>
+                            Fomentar la participación equitativa y el respeto mutuo durante los juegos grupales.
+                        </p>
+
+                        <p class="act-texto">
+                            <strong class="act-label-azul">Motivación:</strong>
+                            Realizar juegos dinámicos que involucren a todo el grupo, promoviendo el respeto a los
+                            turnos, la sana
+                            convivencia y la capacidad de compartir con los demás.
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=YKVvQj_b6EE" target="_blank" rel="noopener"
+                            class="video-link">
+                            <img src="./imagenes/video-moral-1.jpg"
+                                alt="9 juegos para los cumpleaños de los niños - video" class="video-thumb">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -59,5 +151,44 @@
         </div>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll('.area-switcher .tab-btn');
+        const panels = document.querySelectorAll('.area-switcher [role="tabpanel"]');
+
+        function activateTab(targetId) {
+            tabs.forEach(btn => {
+                const active = btn.id === 'tab-' + targetId;
+                btn.classList.toggle('is-active', active);
+                btn.setAttribute('aria-selected', active);
+            });
+
+            panels.forEach(panel => {
+                const show = panel.id === 'panel-' + targetId;
+                panel.hidden = !show; // ✅ solo muestra el panel seleccionado
+            });
+        }
+
+        // Al hacer clic
+        tabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.id.replace('tab-', '');
+                activateTab(targetId);
+            });
+        });
+
+        // Soporte de flechas izq/der
+        const tabList = document.querySelector('.switcher-tabs');
+        tabList.addEventListener('keydown', (e) => {
+            const idx = Array.from(tabs).findIndex(t => t.classList.contains('is-active'));
+            if (e.key === 'ArrowRight') tabs[(idx + 1) % tabs.length].click();
+            if (e.key === 'ArrowLeft') tabs[(idx - 1 + tabs.length) % tabs.length].click();
+        });
+
+        // Mostrar solo información por defecto o hash si existe
+        const hash = window.location.hash.replace('#', '');
+        activateTab(hash === 'dinamicas' ? 'dinamicas' : 'info');
+    });
+</script>
 
 </html>
